@@ -109,12 +109,12 @@ under the License.
     <dependency org="org.apache.hadoop" name="hadoop-common"
       rev="${hadoop.version}" conf="hadoop200->default">
       <artifact name="hadoop-common" type="jar" />
-      <artifact name="hadoop-common" type="jar" m:classifier="tests"/>
+      <artifact name="hadoop-common" type="jar" />
     </dependency>
     <dependency org="org.apache.hadoop" name="hadoop-hdfs"
       rev="${hadoop.version}" conf="hadoop200->default">
       <artifact name="hadoop-hdfs" type="jar" />
-      <artifact name="hadoop-hdfs" type="jar" m:classifier="tests"/>
+      <artifact name="hadoop-hdfs" type="jar" />
     </dependency>
     <dependency org="org.apache.hadoop" name="hadoop-mapreduce-client-common"
       rev="${hadoop.version}" conf="hadoop200->default"/>
@@ -315,7 +315,7 @@ under the License.
       <exclude org="org.apache.velocity" module="velocity"/>
     </dependency>
     <dependency org="org.apache.avro" name="avro-mapred" rev="${avro.version}"
-      m:classifier="hadoop2" conf="avrohadoop2->default;redist->default">
+      conf="avrohadoop2->default;redist->default">
       <exclude org="org.slf4j" module="slf4j-api"/>
       <exclude org="org.mortbay.jetty" module="jetty"/>
       <exclude org="org.jboss.netty" module="netty"/>
